@@ -1,0 +1,968 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.9.2" />
+<title>GUI API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>GUI</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import tkinter as tk
+from tkinter import *
+from tkinter import ttk, filedialog, simpledialog
+from ds_messenger import DirectMessenger
+import time, os
+
+class Body(tk.Frame):
+    
+    def __init__(self, root, select_callback=None):
+        &#34;&#34;&#34;
+        declare variables
+        &#34;&#34;&#34;
+        global sendto
+        sendto = [] #to use when selecting who to send in the widget
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self._select_callback = select_callback
+        self._posts = None
+        self._draw()
+    
+    def node_select(self, event):
+        &#34;&#34;&#34;
+        works when an item in the treeview is selected
+        &#34;&#34;&#34;
+        self.entry_editor.delete(0, tk.END)
+        index = int(self.posts_tree.selection()[0])-1
+        entry = self._posts
+        curItem = self.posts_tree.focus()
+        sendto.append(self.posts_tree.item(curItem)[&#39;text&#39;])
+        for i in range(len(self._posts)): #loops around and unwraps the first layer of the list to be inserted in the box with the given name
+            if self._posts[i][&#39;from&#39;] == sendto[len(sendto)-1]:
+                    self._set_text(self._posts[i][&#39;message&#39;], self._posts[i][&#39;timestamp&#39;])
+        del sendto[0]
+    def get_text_entry(self) -&gt; str:
+        return self.entry_editor.get(&#39;1.0&#39;, &#39;end&#39;).rstrip()
+
+    def _set_text(self,_list:list, _time:list):
+        &#34;&#34;&#34;
+        loops and unwraps the text and time to and insert it into the listbox. Used only with node_select function
+        &#34;&#34;&#34;
+        self.entry_editor.delete(0, tk.END)
+        _list.reverse()
+        _time.reverse()
+        for i in range(len(_list)):
+            self.entry_editor.insert(tk.END,_time[i] +&#39; - &#39; +  _list[i], &#39;\n&#39;)
+        
+    def set_text_entry(self, text:str):
+        &#34;&#34;&#34;
+        puts text in the listbox. Works with send function
+        &#34;&#34;&#34;
+        self.entry_editor.insert(0,text,&#39;\n&#39;)
+
+    def set_posts(self, posts:list):
+        &#34;&#34;&#34;
+        prep to place text in the treeview widget
+        &#34;&#34;&#34;
+        self._posts = posts
+        for i in range(len(self._posts)):
+            self._insert_post_tree(i, self._posts[i])
+
+
+    def insert_post(self, post):
+        &#34;&#34;&#34;
+        prep to insert a text into the treeview. Works with add user only
+        &#34;&#34;&#34;
+        self._posts.append(post)
+        self._insert_post_tree(len(self._posts), post)
+
+    def reset_ui(self):
+        &#34;&#34;&#34;
+        clear the entire window
+        &#34;&#34;&#34;
+        self.entry_editor.delete(0)
+        self._posts = []
+        for item in self.posts_tree.get_children():
+            self.posts_tree.delete(item)
+
+    def _insert_post_tree(self, id, post = None):
+        &#34;&#34;&#34;
+        puts the name of the sender to the treeview
+        &#34;&#34;&#34;
+        entry = post
+        self.posts_tree.insert(&#39;&#39;, id, id, text = post[&#39;from&#39;])
+        
+    def insert_add(self,id, user):
+        &#34;&#34;&#34;
+        Insert added username to treeview.
+        &#34;&#34;&#34;
+        if user != None:
+            self.posts_tree.insert(&#39;&#39;, id, id, text = user)
+        
+    def _draw(self):
+        &#34;&#34;&#34;
+        draws the widgets, backgrounds of the file
+        &#34;&#34;&#34;
+        posts_frame = tk.Frame(master=self, width=250)
+        posts_frame.pack(fill=tk.BOTH, side=tk.LEFT)
+        self.posts_tree = ttk.Treeview(posts_frame)
+        self.posts_tree.bind(&#34;&lt;&lt;TreeviewSelect&gt;&gt;&#34;, self.node_select)
+        self.posts_tree.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=10, pady=10)
+
+        entry_frame = tk.Frame(master=self, bg=&#34;&#34;)
+        entry_frame.pack(fill=tk.BOTH, side=tk.TOP, expand=True)
+        
+        editor_frame = tk.Frame(master=entry_frame)
+        editor_frame.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
+        
+        scroll_frame = tk.Frame(master=entry_frame, bg=&#34;blue&#34;, width=10)
+        scroll_frame.pack(fill=tk.BOTH, side=tk.LEFT, expand=False)
+        
+        self.entry_editor = tk.Listbox(editor_frame, width=0,justify = tk.CENTER)
+        self.entry_editor.pack(fill=tk.BOTH, side=tk.LEFT, expand=True, padx=5, pady=5)
+
+        entry_editor_scrollbar = tk.Scrollbar(master=scroll_frame, command=self.entry_editor.yview)
+        self.entry_editor[&#39;yscrollcommand&#39;] = entry_editor_scrollbar.set
+        entry_editor_scrollbar.pack(fill=tk.Y, side=tk.LEFT, expand=False, padx=0, pady=0)
+
+class Footer(tk.Frame):
+    
+    def __init__(self, root, save_callback=None, online = None, add_user = None):
+        &#34;&#34;&#34;
+        declare variables
+        &#34;&#34;&#34;
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self.msg = tk.StringVar()
+        self.msg.set(&#34;Type messages here&#34;)
+        self._save_callback = save_callback
+        self.add_user = add_user
+        self._online_callback = online
+        self.is_online = tk.IntVar()
+        self._draw()
+
+    def new(self):
+        &#34;&#34;&#34;
+        works with check button to see whether it was checked.
+        &#34;&#34;&#34;
+        chk_value = self.is_online.get()
+        self._online_callback(chk_value)
+    
+    def save_click(self):
+        &#34;&#34;&#34;
+        works when save button is clicked
+        &#34;&#34;&#34;
+        if self._save_callback is not None:
+            self._save_callback()
+            
+    def word(self):
+        &#34;&#34;&#34;
+        recieve the input message by the user
+        &#34;&#34;&#34;
+        msg = self.msg.get()
+        self.msg.set(&#34;&#34;)
+        return msg
+
+    def _draw(self):
+        &#34;&#34;&#34;
+        puts the buttons on the canvas
+        &#34;&#34;&#34;
+        save_button = tk.Button(master=self, text=&#34;Send&#34;, width=20)
+        save_button.configure(command=self.save_click)
+        save_button.pack(fill=tk.BOTH, side=tk.RIGHT, padx=5, pady=5)
+        add_user = tk.Button(master=self, text = &#39;Add User&#39;, width = 20)
+        add_user.configure(command=self.add_user)
+        add_user.pack(fill=tk.BOTH, side=tk.LEFT, padx=5, pady=5)
+        self.chk_button = tk.Checkbutton(master=self, variable = self.is_online)
+        self.chk_button.configure(command=self.new) 
+        self.chk_button.pack(fill=tk.BOTH, side=tk.RIGHT)
+        inbox = tk.Entry(master=self,fg=&#39;BLACK&#39;, bd= 1,width=150,textvariable=self.msg, justify= CENTER)
+        inbox.pack(side= tk.RIGHT)
+
+
+class MainApp(tk.Frame):
+    
+    def __init__(self, root):
+        &#34;&#34;&#34;
+        declare variables
+        &#34;&#34;&#34;
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self._current_profile = None
+        self.profile = None
+        self._is_online = False
+        self.dsu = None
+        self.username = None
+        self.password = None
+        self.token = None
+        self.count = 0
+        self._draw()
+    
+    def add(self):
+        &#34;&#34;&#34;
+        add user to the treeview with the information written by user in the popup window
+        &#34;&#34;&#34;
+        self.count+=1
+        root = tk.Tk()
+        root.withdraw()
+        a = simpledialog.askstring(&#34;Input&#34;, &#34;Input User&#34;)
+        self.body.insert_add(self.count, a)
+
+    def close(self):
+        &#34;&#34;&#34;
+        closes the window
+        &#34;&#34;&#34;
+        self.root.destroy()
+
+    def send(self):
+        &#34;&#34;&#34;
+        sends message to the selected user when the send button is clicked
+        &#34;&#34;&#34;
+        msg = self.footer.word()
+        self.body.set_text_entry(msg)
+        if len(sendto) != 0:
+            recipient = sendto[len(sendto)-1]
+            self.profile.send(msg, recipient)
+            
+    def online_new(self, value:bool):
+        &#34;&#34;&#34;
+        retrieve new message if there are any otherwise inserts no new messages into the listbox
+        &#34;&#34;&#34;
+        self._is_online = bool(value)
+        if self._is_online is True and len(self.profile.retrieve_new()) == 0:
+            self.body.reset_ui()
+            self.body.set_text_entry(&#34;No New Messages&#34;)
+        else:
+            self.body.reset_ui()
+            self.body.set_posts(self.profile.retrieve_all())
+
+        
+    def _draw(self):
+        &#34;&#34;&#34;
+        combines the things drawn in footer and body class into one. Also makes a separate popup window to help inform the users what to do
+        https://stackoverflow.com/questions/43932106/tkinter-how-to-fix-the-window-opening-position-while-letting-the-width-and-heig
+        ^^^ helps place the popup in the center of the screen
+        &#34;&#34;&#34;
+        root = tk.Tk()
+        root.attributes(&#34;-topmost&#34;, True)
+        root.title(&#34;READ&#34;)
+        root.geometry(&#34;250x225&#34;)
+        windowWidth = root.winfo_reqwidth()
+        windowHeight = root.winfo_reqheight()
+        positionRight = int(root.winfo_screenwidth()/2 - windowWidth/2)
+        positionDown = int(root.winfo_screenheight()/2 - windowHeight/2)
+        root.geometry(&#34;+{}+{}&#34;.format(positionRight, positionDown))
+        txt = tk.Text(root, height = 15,width = 30)
+        txt.insert(0.0,&#34;Available for Server 168.235.86.101:\nUsername: Clowna (or) Clownb\n(or) Clownc (or) Clownd\nPassword: pwd123\n\nNotice: Only Clowna has infor-mation&#34;)
+        txt.insert(10.0,&#34;\nUser Message will be hidden when revisiting to protect privacy!\nClick Check Button to view New Message.\nMessenger will only show received messages upon loading&#34;)
+        txt.configure(state=&#39;disabled&#39;)
+        txt.pack()
+        a = simpledialog.askstring(&#34;Input&#34;, &#34;Input a Server&#34;)
+        self.dsu = a
+        if self.dsu == &#34;&#34; or self.dsu == None:
+            raise Exception(&#34;ERROR! NO SERVER DETECTED!&#34;)
+        a = simpledialog.askstring(&#34;Input&#34;, &#34;Input a Username&#34;)
+        self.username = a
+        a = simpledialog.askstring(&#34;Input&#34;, &#34;Input a Password&#34;)
+        self.password = a
+        self.profile = DirectMessenger(self.dsu,self.username,self.password)
+        menu_bar = tk.Menu(self.root)
+        self.root[&#39;menu&#39;] = menu_bar
+        menu_file = tk.Menu(menu_bar)
+        menu_bar.add_cascade(menu=menu_file, label=&#39;File&#39;)
+        menu_file.add_command(label=&#39;Close&#39;, command=self.close)
+        self.body = Body(self.root)
+        self.body.pack(fill=tk.BOTH, side=tk.TOP, expand=True)
+        self.body.set_posts(self.profile.retrieve_all())
+        self.count = len(self.profile.retrieve_all())
+        if self.count == 0: #when no messages are received, puts text and photo on the ui
+            self.body.set_text_entry(&#34;It&#39;s quiet in here... People who message you will appear here&#34;)
+        self.footer = Footer(self.root, save_callback=self.send,online = self.online_new, add_user = self.add)
+        self.footer.pack(fill=tk.BOTH, side=tk.BOTTOM)
+        
+
+if __name__ == &#34;__main__&#34;:
+    &#34;&#34;&#34;
+    runs the program
+    &#34;&#34;&#34;
+    main = tk.Tk()
+    main.title(&#34;ICS 32 Messenger Demo&#34;)
+    main.geometry(&#34;720x480&#34;)
+    main.option_add(&#39;*tearOff&#39;, False)
+    MainApp(main)
+    main.update()
+    main.minsize(main.winfo_width(), main.winfo_height())
+    main.mainloop()</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="GUI.Body"><code class="flex name class">
+<span>class <span class="ident">Body</span></span>
+<span>(</span><span>root, select_callback=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Frame widget which may contain other widgets and can have a 3D border.</p>
+<p>declare variables</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Body(tk.Frame):
+    
+    def __init__(self, root, select_callback=None):
+        &#34;&#34;&#34;
+        declare variables
+        &#34;&#34;&#34;
+        global sendto
+        sendto = [] #to use when selecting who to send in the widget
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self._select_callback = select_callback
+        self._posts = None
+        self._draw()
+    
+    def node_select(self, event):
+        &#34;&#34;&#34;
+        works when an item in the treeview is selected
+        &#34;&#34;&#34;
+        self.entry_editor.delete(0, tk.END)
+        index = int(self.posts_tree.selection()[0])-1
+        entry = self._posts
+        curItem = self.posts_tree.focus()
+        sendto.append(self.posts_tree.item(curItem)[&#39;text&#39;])
+        for i in range(len(self._posts)): #loops around and unwraps the first layer of the list to be inserted in the box with the given name
+            if self._posts[i][&#39;from&#39;] == sendto[len(sendto)-1]:
+                    self._set_text(self._posts[i][&#39;message&#39;], self._posts[i][&#39;timestamp&#39;])
+        del sendto[0]
+    def get_text_entry(self) -&gt; str:
+        return self.entry_editor.get(&#39;1.0&#39;, &#39;end&#39;).rstrip()
+
+    def _set_text(self,_list:list, _time:list):
+        &#34;&#34;&#34;
+        loops and unwraps the text and time to and insert it into the listbox. Used only with node_select function
+        &#34;&#34;&#34;
+        self.entry_editor.delete(0, tk.END)
+        _list.reverse()
+        _time.reverse()
+        for i in range(len(_list)):
+            self.entry_editor.insert(tk.END,_time[i] +&#39; - &#39; +  _list[i], &#39;\n&#39;)
+        
+    def set_text_entry(self, text:str):
+        &#34;&#34;&#34;
+        puts text in the listbox. Works with send function
+        &#34;&#34;&#34;
+        self.entry_editor.insert(0,text,&#39;\n&#39;)
+
+    def set_posts(self, posts:list):
+        &#34;&#34;&#34;
+        prep to place text in the treeview widget
+        &#34;&#34;&#34;
+        self._posts = posts
+        for i in range(len(self._posts)):
+            self._insert_post_tree(i, self._posts[i])
+
+
+    def insert_post(self, post):
+        &#34;&#34;&#34;
+        prep to insert a text into the treeview. Works with add user only
+        &#34;&#34;&#34;
+        self._posts.append(post)
+        self._insert_post_tree(len(self._posts), post)
+
+    def reset_ui(self):
+        &#34;&#34;&#34;
+        clear the entire window
+        &#34;&#34;&#34;
+        self.entry_editor.delete(0)
+        self._posts = []
+        for item in self.posts_tree.get_children():
+            self.posts_tree.delete(item)
+
+    def _insert_post_tree(self, id, post = None):
+        &#34;&#34;&#34;
+        puts the name of the sender to the treeview
+        &#34;&#34;&#34;
+        entry = post
+        self.posts_tree.insert(&#39;&#39;, id, id, text = post[&#39;from&#39;])
+        
+    def insert_add(self,id, user):
+        &#34;&#34;&#34;
+        Insert added username to treeview.
+        &#34;&#34;&#34;
+        if user != None:
+            self.posts_tree.insert(&#39;&#39;, id, id, text = user)
+        
+    def _draw(self):
+        &#34;&#34;&#34;
+        draws the widgets, backgrounds of the file
+        &#34;&#34;&#34;
+        posts_frame = tk.Frame(master=self, width=250)
+        posts_frame.pack(fill=tk.BOTH, side=tk.LEFT)
+        self.posts_tree = ttk.Treeview(posts_frame)
+        self.posts_tree.bind(&#34;&lt;&lt;TreeviewSelect&gt;&gt;&#34;, self.node_select)
+        self.posts_tree.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=10, pady=10)
+
+        entry_frame = tk.Frame(master=self, bg=&#34;&#34;)
+        entry_frame.pack(fill=tk.BOTH, side=tk.TOP, expand=True)
+        
+        editor_frame = tk.Frame(master=entry_frame)
+        editor_frame.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
+        
+        scroll_frame = tk.Frame(master=entry_frame, bg=&#34;blue&#34;, width=10)
+        scroll_frame.pack(fill=tk.BOTH, side=tk.LEFT, expand=False)
+        
+        self.entry_editor = tk.Listbox(editor_frame, width=0,justify = tk.CENTER)
+        self.entry_editor.pack(fill=tk.BOTH, side=tk.LEFT, expand=True, padx=5, pady=5)
+
+        entry_editor_scrollbar = tk.Scrollbar(master=scroll_frame, command=self.entry_editor.yview)
+        self.entry_editor[&#39;yscrollcommand&#39;] = entry_editor_scrollbar.set
+        entry_editor_scrollbar.pack(fill=tk.Y, side=tk.LEFT, expand=False, padx=0, pady=0)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>tkinter.Frame</li>
+<li>tkinter.Widget</li>
+<li>tkinter.BaseWidget</li>
+<li>tkinter.Misc</li>
+<li>tkinter.Pack</li>
+<li>tkinter.Place</li>
+<li>tkinter.Grid</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="GUI.Body.get_text_entry"><code class="name flex">
+<span>def <span class="ident">get_text_entry</span></span>(<span>self) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_text_entry(self) -&gt; str:
+    return self.entry_editor.get(&#39;1.0&#39;, &#39;end&#39;).rstrip()</code></pre>
+</details>
+</dd>
+<dt id="GUI.Body.insert_add"><code class="name flex">
+<span>def <span class="ident">insert_add</span></span>(<span>self, id, user)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Insert added username to treeview.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def insert_add(self,id, user):
+    &#34;&#34;&#34;
+    Insert added username to treeview.
+    &#34;&#34;&#34;
+    if user != None:
+        self.posts_tree.insert(&#39;&#39;, id, id, text = user)</code></pre>
+</details>
+</dd>
+<dt id="GUI.Body.insert_post"><code class="name flex">
+<span>def <span class="ident">insert_post</span></span>(<span>self, post)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>prep to insert a text into the treeview. Works with add user only</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def insert_post(self, post):
+    &#34;&#34;&#34;
+    prep to insert a text into the treeview. Works with add user only
+    &#34;&#34;&#34;
+    self._posts.append(post)
+    self._insert_post_tree(len(self._posts), post)</code></pre>
+</details>
+</dd>
+<dt id="GUI.Body.node_select"><code class="name flex">
+<span>def <span class="ident">node_select</span></span>(<span>self, event)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>works when an item in the treeview is selected</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def node_select(self, event):
+    &#34;&#34;&#34;
+    works when an item in the treeview is selected
+    &#34;&#34;&#34;
+    self.entry_editor.delete(0, tk.END)
+    index = int(self.posts_tree.selection()[0])-1
+    entry = self._posts
+    curItem = self.posts_tree.focus()
+    sendto.append(self.posts_tree.item(curItem)[&#39;text&#39;])
+    for i in range(len(self._posts)): #loops around and unwraps the first layer of the list to be inserted in the box with the given name
+        if self._posts[i][&#39;from&#39;] == sendto[len(sendto)-1]:
+                self._set_text(self._posts[i][&#39;message&#39;], self._posts[i][&#39;timestamp&#39;])
+    del sendto[0]</code></pre>
+</details>
+</dd>
+<dt id="GUI.Body.reset_ui"><code class="name flex">
+<span>def <span class="ident">reset_ui</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>clear the entire window</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def reset_ui(self):
+    &#34;&#34;&#34;
+    clear the entire window
+    &#34;&#34;&#34;
+    self.entry_editor.delete(0)
+    self._posts = []
+    for item in self.posts_tree.get_children():
+        self.posts_tree.delete(item)</code></pre>
+</details>
+</dd>
+<dt id="GUI.Body.set_posts"><code class="name flex">
+<span>def <span class="ident">set_posts</span></span>(<span>self, posts: list)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>prep to place text in the treeview widget</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_posts(self, posts:list):
+    &#34;&#34;&#34;
+    prep to place text in the treeview widget
+    &#34;&#34;&#34;
+    self._posts = posts
+    for i in range(len(self._posts)):
+        self._insert_post_tree(i, self._posts[i])</code></pre>
+</details>
+</dd>
+<dt id="GUI.Body.set_text_entry"><code class="name flex">
+<span>def <span class="ident">set_text_entry</span></span>(<span>self, text: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>puts text in the listbox. Works with send function</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_text_entry(self, text:str):
+    &#34;&#34;&#34;
+    puts text in the listbox. Works with send function
+    &#34;&#34;&#34;
+    self.entry_editor.insert(0,text,&#39;\n&#39;)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="GUI.Footer"><code class="flex name class">
+<span>class <span class="ident">Footer</span></span>
+<span>(</span><span>root, save_callback=None, online=None, add_user=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Frame widget which may contain other widgets and can have a 3D border.</p>
+<p>declare variables</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Footer(tk.Frame):
+    
+    def __init__(self, root, save_callback=None, online = None, add_user = None):
+        &#34;&#34;&#34;
+        declare variables
+        &#34;&#34;&#34;
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self.msg = tk.StringVar()
+        self.msg.set(&#34;Type messages here&#34;)
+        self._save_callback = save_callback
+        self.add_user = add_user
+        self._online_callback = online
+        self.is_online = tk.IntVar()
+        self._draw()
+
+    def new(self):
+        &#34;&#34;&#34;
+        works with check button to see whether it was checked.
+        &#34;&#34;&#34;
+        chk_value = self.is_online.get()
+        self._online_callback(chk_value)
+    
+    def save_click(self):
+        &#34;&#34;&#34;
+        works when save button is clicked
+        &#34;&#34;&#34;
+        if self._save_callback is not None:
+            self._save_callback()
+            
+    def word(self):
+        &#34;&#34;&#34;
+        recieve the input message by the user
+        &#34;&#34;&#34;
+        msg = self.msg.get()
+        self.msg.set(&#34;&#34;)
+        return msg
+
+    def _draw(self):
+        &#34;&#34;&#34;
+        puts the buttons on the canvas
+        &#34;&#34;&#34;
+        save_button = tk.Button(master=self, text=&#34;Send&#34;, width=20)
+        save_button.configure(command=self.save_click)
+        save_button.pack(fill=tk.BOTH, side=tk.RIGHT, padx=5, pady=5)
+        add_user = tk.Button(master=self, text = &#39;Add User&#39;, width = 20)
+        add_user.configure(command=self.add_user)
+        add_user.pack(fill=tk.BOTH, side=tk.LEFT, padx=5, pady=5)
+        self.chk_button = tk.Checkbutton(master=self, variable = self.is_online)
+        self.chk_button.configure(command=self.new) 
+        self.chk_button.pack(fill=tk.BOTH, side=tk.RIGHT)
+        inbox = tk.Entry(master=self,fg=&#39;BLACK&#39;, bd= 1,width=150,textvariable=self.msg, justify= CENTER)
+        inbox.pack(side= tk.RIGHT)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>tkinter.Frame</li>
+<li>tkinter.Widget</li>
+<li>tkinter.BaseWidget</li>
+<li>tkinter.Misc</li>
+<li>tkinter.Pack</li>
+<li>tkinter.Place</li>
+<li>tkinter.Grid</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="GUI.Footer.new"><code class="name flex">
+<span>def <span class="ident">new</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>works with check button to see whether it was checked.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def new(self):
+    &#34;&#34;&#34;
+    works with check button to see whether it was checked.
+    &#34;&#34;&#34;
+    chk_value = self.is_online.get()
+    self._online_callback(chk_value)</code></pre>
+</details>
+</dd>
+<dt id="GUI.Footer.save_click"><code class="name flex">
+<span>def <span class="ident">save_click</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>works when save button is clicked</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def save_click(self):
+    &#34;&#34;&#34;
+    works when save button is clicked
+    &#34;&#34;&#34;
+    if self._save_callback is not None:
+        self._save_callback()</code></pre>
+</details>
+</dd>
+<dt id="GUI.Footer.word"><code class="name flex">
+<span>def <span class="ident">word</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>recieve the input message by the user</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def word(self):
+    &#34;&#34;&#34;
+    recieve the input message by the user
+    &#34;&#34;&#34;
+    msg = self.msg.get()
+    self.msg.set(&#34;&#34;)
+    return msg</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="GUI.MainApp"><code class="flex name class">
+<span>class <span class="ident">MainApp</span></span>
+<span>(</span><span>root)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Frame widget which may contain other widgets and can have a 3D border.</p>
+<p>declare variables</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class MainApp(tk.Frame):
+    
+    def __init__(self, root):
+        &#34;&#34;&#34;
+        declare variables
+        &#34;&#34;&#34;
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self._current_profile = None
+        self.profile = None
+        self._is_online = False
+        self.dsu = None
+        self.username = None
+        self.password = None
+        self.token = None
+        self.count = 0
+        self._draw()
+    
+    def add(self):
+        &#34;&#34;&#34;
+        add user to the treeview with the information written by user in the popup window
+        &#34;&#34;&#34;
+        self.count+=1
+        root = tk.Tk()
+        root.withdraw()
+        a = simpledialog.askstring(&#34;Input&#34;, &#34;Input User&#34;)
+        self.body.insert_add(self.count, a)
+
+    def close(self):
+        &#34;&#34;&#34;
+        closes the window
+        &#34;&#34;&#34;
+        self.root.destroy()
+
+    def send(self):
+        &#34;&#34;&#34;
+        sends message to the selected user when the send button is clicked
+        &#34;&#34;&#34;
+        msg = self.footer.word()
+        self.body.set_text_entry(msg)
+        if len(sendto) != 0:
+            recipient = sendto[len(sendto)-1]
+            self.profile.send(msg, recipient)
+            
+    def online_new(self, value:bool):
+        &#34;&#34;&#34;
+        retrieve new message if there are any otherwise inserts no new messages into the listbox
+        &#34;&#34;&#34;
+        self._is_online = bool(value)
+        if self._is_online is True and len(self.profile.retrieve_new()) == 0:
+            self.body.reset_ui()
+            self.body.set_text_entry(&#34;No New Messages&#34;)
+        else:
+            self.body.reset_ui()
+            self.body.set_posts(self.profile.retrieve_all())
+
+        
+    def _draw(self):
+        &#34;&#34;&#34;
+        combines the things drawn in footer and body class into one. Also makes a separate popup window to help inform the users what to do
+        https://stackoverflow.com/questions/43932106/tkinter-how-to-fix-the-window-opening-position-while-letting-the-width-and-heig
+        ^^^ helps place the popup in the center of the screen
+        &#34;&#34;&#34;
+        root = tk.Tk()
+        root.attributes(&#34;-topmost&#34;, True)
+        root.title(&#34;READ&#34;)
+        root.geometry(&#34;250x225&#34;)
+        windowWidth = root.winfo_reqwidth()
+        windowHeight = root.winfo_reqheight()
+        positionRight = int(root.winfo_screenwidth()/2 - windowWidth/2)
+        positionDown = int(root.winfo_screenheight()/2 - windowHeight/2)
+        root.geometry(&#34;+{}+{}&#34;.format(positionRight, positionDown))
+        txt = tk.Text(root, height = 15,width = 30)
+        txt.insert(0.0,&#34;Available for Server 168.235.86.101:\nUsername: Clowna (or) Clownb\n(or) Clownc (or) Clownd\nPassword: pwd123\n\nNotice: Only Clowna has infor-mation&#34;)
+        txt.insert(10.0,&#34;\nUser Message will be hidden when revisiting to protect privacy!\nClick Check Button to view New Message.\nMessenger will only show received messages upon loading&#34;)
+        txt.configure(state=&#39;disabled&#39;)
+        txt.pack()
+        a = simpledialog.askstring(&#34;Input&#34;, &#34;Input a Server&#34;)
+        self.dsu = a
+        if self.dsu == &#34;&#34; or self.dsu == None:
+            raise Exception(&#34;ERROR! NO SERVER DETECTED!&#34;)
+        a = simpledialog.askstring(&#34;Input&#34;, &#34;Input a Username&#34;)
+        self.username = a
+        a = simpledialog.askstring(&#34;Input&#34;, &#34;Input a Password&#34;)
+        self.password = a
+        self.profile = DirectMessenger(self.dsu,self.username,self.password)
+        menu_bar = tk.Menu(self.root)
+        self.root[&#39;menu&#39;] = menu_bar
+        menu_file = tk.Menu(menu_bar)
+        menu_bar.add_cascade(menu=menu_file, label=&#39;File&#39;)
+        menu_file.add_command(label=&#39;Close&#39;, command=self.close)
+        self.body = Body(self.root)
+        self.body.pack(fill=tk.BOTH, side=tk.TOP, expand=True)
+        self.body.set_posts(self.profile.retrieve_all())
+        self.count = len(self.profile.retrieve_all())
+        if self.count == 0: #when no messages are received, puts text and photo on the ui
+            self.body.set_text_entry(&#34;It&#39;s quiet in here... People who message you will appear here&#34;)
+        self.footer = Footer(self.root, save_callback=self.send,online = self.online_new, add_user = self.add)
+        self.footer.pack(fill=tk.BOTH, side=tk.BOTTOM)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>tkinter.Frame</li>
+<li>tkinter.Widget</li>
+<li>tkinter.BaseWidget</li>
+<li>tkinter.Misc</li>
+<li>tkinter.Pack</li>
+<li>tkinter.Place</li>
+<li>tkinter.Grid</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="GUI.MainApp.add"><code class="name flex">
+<span>def <span class="ident">add</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>add user to the treeview with the information written by user in the popup window</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def add(self):
+    &#34;&#34;&#34;
+    add user to the treeview with the information written by user in the popup window
+    &#34;&#34;&#34;
+    self.count+=1
+    root = tk.Tk()
+    root.withdraw()
+    a = simpledialog.askstring(&#34;Input&#34;, &#34;Input User&#34;)
+    self.body.insert_add(self.count, a)</code></pre>
+</details>
+</dd>
+<dt id="GUI.MainApp.close"><code class="name flex">
+<span>def <span class="ident">close</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>closes the window</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def close(self):
+    &#34;&#34;&#34;
+    closes the window
+    &#34;&#34;&#34;
+    self.root.destroy()</code></pre>
+</details>
+</dd>
+<dt id="GUI.MainApp.online_new"><code class="name flex">
+<span>def <span class="ident">online_new</span></span>(<span>self, value: bool)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>retrieve new message if there are any otherwise inserts no new messages into the listbox</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def online_new(self, value:bool):
+    &#34;&#34;&#34;
+    retrieve new message if there are any otherwise inserts no new messages into the listbox
+    &#34;&#34;&#34;
+    self._is_online = bool(value)
+    if self._is_online is True and len(self.profile.retrieve_new()) == 0:
+        self.body.reset_ui()
+        self.body.set_text_entry(&#34;No New Messages&#34;)
+    else:
+        self.body.reset_ui()
+        self.body.set_posts(self.profile.retrieve_all())</code></pre>
+</details>
+</dd>
+<dt id="GUI.MainApp.send"><code class="name flex">
+<span>def <span class="ident">send</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>sends message to the selected user when the send button is clicked</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def send(self):
+    &#34;&#34;&#34;
+    sends message to the selected user when the send button is clicked
+    &#34;&#34;&#34;
+    msg = self.footer.word()
+    self.body.set_text_entry(msg)
+    if len(sendto) != 0:
+        recipient = sendto[len(sendto)-1]
+        self.profile.send(msg, recipient)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="GUI.Body" href="#GUI.Body">Body</a></code></h4>
+<ul class="two-column">
+<li><code><a title="GUI.Body.get_text_entry" href="#GUI.Body.get_text_entry">get_text_entry</a></code></li>
+<li><code><a title="GUI.Body.insert_add" href="#GUI.Body.insert_add">insert_add</a></code></li>
+<li><code><a title="GUI.Body.insert_post" href="#GUI.Body.insert_post">insert_post</a></code></li>
+<li><code><a title="GUI.Body.node_select" href="#GUI.Body.node_select">node_select</a></code></li>
+<li><code><a title="GUI.Body.reset_ui" href="#GUI.Body.reset_ui">reset_ui</a></code></li>
+<li><code><a title="GUI.Body.set_posts" href="#GUI.Body.set_posts">set_posts</a></code></li>
+<li><code><a title="GUI.Body.set_text_entry" href="#GUI.Body.set_text_entry">set_text_entry</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="GUI.Footer" href="#GUI.Footer">Footer</a></code></h4>
+<ul class="">
+<li><code><a title="GUI.Footer.new" href="#GUI.Footer.new">new</a></code></li>
+<li><code><a title="GUI.Footer.save_click" href="#GUI.Footer.save_click">save_click</a></code></li>
+<li><code><a title="GUI.Footer.word" href="#GUI.Footer.word">word</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="GUI.MainApp" href="#GUI.MainApp">MainApp</a></code></h4>
+<ul class="">
+<li><code><a title="GUI.MainApp.add" href="#GUI.MainApp.add">add</a></code></li>
+<li><code><a title="GUI.MainApp.close" href="#GUI.MainApp.close">close</a></code></li>
+<li><code><a title="GUI.MainApp.online_new" href="#GUI.MainApp.online_new">online_new</a></code></li>
+<li><code><a title="GUI.MainApp.send" href="#GUI.MainApp.send">send</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.9.2</a>.</p>
+</footer>
+</body>
+</html>
